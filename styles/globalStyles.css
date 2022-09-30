@@ -44,10 +44,16 @@
 body {
   font-family: var(--font-family-1);
 }
+body button{
+  cursor: pointer;
+}
 
 .container {
-  max-width: 43rem;
-  margin: 0 auto;
+  align-items: center;
+}
+
+ul{
+  list-style: none;
 }
 
 @media (max-width: 700px) {
@@ -56,3 +62,8 @@ body {
     margin: 0 1rem;
   }
 }
+
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+} 

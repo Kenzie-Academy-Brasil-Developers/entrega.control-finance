@@ -1,1 +1,68 @@
-/* Desenvolva a estilização da sua página aqui */
+.main{
+    max-width: 43rem;
+    width: 43rem;
+}
+.control{
+    color: var(--color-brand-1);
+}
+.butLi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.766rem;
+    height: 1.625rem;
+    background: var(--fixed-white);
+    border: 0.094rem solid var(--color-grey-5);
+    border-radius: 0.25rem;
+}
+.butLi img{
+    width: 100%;
+    background: transparent;
+    height: 100%;
+}
+.butDiv1{
+    height: 2rem;
+    padding: 0rem 0.875rem;
+    border: 0.094rem solid var(--color-grey-5);
+    border-radius: 0.5rem;
+    background: var(--fixed-white);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 150%;
+}
+.butDiv1:hover{
+    background: #F0ECFB;
+    border: 0.094rem solid var(--color-brand-1);
+    color: var(--color-brand-1);
+    transition: var(--animation-duration) var(--animation-type);
+}
+.butDiv1:focus{
+    background: #F0ECFB;
+    border: 0.094rem solid var(--color-brand-1);
+    color: var(--color-brand-1);
+}
+.div2{
+    border: 0.094rem solid var(--color-grey-4);
+    height: 2.75rem;
+    padding: 0.875rem 1rem;
+    border-radius: var(--radius-1);
+    background-color: var(--color-grey-5);
+}
+.valores{
+    border: 0.094rem solid var(--color-grey-5);
+    height: 2.75rem;
+    padding: 1rem 1rem;
+    border-radius: var(--radius-1);
+
+}
+.pValores{
+    background-color: var(--color-grey-4);
+    width: 4.25rem;
+    height: 1.625rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: var(--radius-2);
+}

@@ -1,0 +1,21 @@
+.flex{display: flex;}
+
+.none{display: none;}
+
+.align{align-items: center;}
+
+.justifyCenter{justify-content: center;}
+
+.justifyBet{justify-content: space-between;}
+
+.column{flex-direction: column;}
+
+.wrap{flex-wrap: wrap;}
+
+.gap8{gap: 0.5rem;}
+
+.gap16{gap: 1rem;}
+
+.gap32{gap: 2rem;}
+
+.relative{position: relative;}

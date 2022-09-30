@@ -1,0 +1,37 @@
+.header{
+    background-color: var(--color-grey-5);
+    height: 6.813rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.header h1{
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-1);
+    size: var(--font-size-1);
+}
+.header button{
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-1);
+    size: var(--font-size-3);
+}
+.secHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 43rem;
+    margin: 0 auto;
+}
+.butHeader{
+    padding: 0rem 0.875rem;
+    background: var(--color-brand-1);
+    border: 0.094rem solid var(--color-brand-1);
+    border-radius: 0.5rem;
+    height: 2rem;
+    color: var(--fixed-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

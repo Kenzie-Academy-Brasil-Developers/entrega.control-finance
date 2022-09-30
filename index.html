@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Finance</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Control Finance - Seu controle financeiro">
+    <link rel="stylesheet" href="./styles/globalStyles.css">
+    <link rel="stylesheet" href="./pages/home/index.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/coisasUsuais.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+</head>
+<body class="container flex column gap32 relative">
+    <header class="header">
+        <section class="secHeader">
+            <h1><span class="control">Control</span> Finance</h1>
+            <button id="butAddNovoValor" class="butHeader">Registrar novo valor</button>
+        </section>
+    </header>
+    <main class="main flex column gap32">
+        <div class="div1 flex align justifyBet wrap">
+            <h2>Resumo financeiro</h2>
+        <section class="secBut1 flex gap16">
+            <button id="todos" class="butDiv1">Todos</button>
+            <button id="entradas" class="butDiv1">Entradas</button>
+            <button id="saidas" class="butDiv1">Saídas</button>
+        </section>
+        </div>
+        <div class="div2 flex align justifyBet">
+            <p>Soma dos valores</p>
+            <p id="valorTotal">R$0,00</p>
+        </div>
+        <div>
+            <ul id="ulMain" class="flex column gap16">
+                  
+            </ul>
+        </div>
+        <div id="modal" class="modalBackground relative none">
+            <div class="modal">
+                <section class="secModal1">
+                    <h2>Registro de valor</h2>
+                    <button id="butCloseModal" class="butCloseModal">X</button>
+                </section>
+                <section class="secModal2"><p>Digite o valor e em seguida aperte no botão referente ao tipo do valor </p></section>
+                <form action="" class="secModal3">
+                    <label for="valor">Valor</label>
+                    <input class="value" type="text" id="valor" placeholder="R$ 0,00" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                </form>
+                <section class="secModal4">
+                    <p>Tipo de valor</p>
+                    <label for="entrada">Entrada</label>
+                    <input id="entrada" type="radio" value="0" name="valor">
+                    <label for="saida">Saida</label>
+                    <input id="saida" type="radio" value="1" name="valor">
+                    <!-- <button id="entradaModal" class="butSecModal4">Entrada</button>
+                    <button id="saidaModal" class="butSecModal4">Saída</button> -->
+                </section>
+                <section class="secModal5">
+                    <button id="butCloseModal2" class="butSecModal5-1">Cancelar</button>
+                    <button id="inserirValorModal" class="butSecModal5-2">Inserir valor</button>
+                </section>
+            </div>
+        </div>
+        </main>
+
+
+
+
+
+    
+        <script src="./pages/home/valuesData.js"></script>
+        <script src="./pages/home/index.js"></script>
+        <script src="./scripts/modal.js"></script>
+</body>
+</html>
