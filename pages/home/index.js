@@ -105,7 +105,7 @@ inserirValorModal.addEventListener("click", function(){
     ulMain.innerHTML = ""
     insertedValues.push(obj)
     modal.classList.remove("apareceModal")
-    criaCards()
+    criaCards(insertedValues)
 })
 
 
