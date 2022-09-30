@@ -42,6 +42,7 @@
     background: #F0ECFB;
     border: 0.094rem solid var(--color-brand-1);
     color: var(--color-brand-1);
+    transform: translateY(4px);
 }
 .div2{
     border: 0.094rem solid var(--color-grey-4);

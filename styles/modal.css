@@ -53,10 +53,9 @@
     width: 23.75rem;
     height: 2.75rem;
     border-radius: 4px;
-    padding: 0rem 0.313rem;
+    padding: 0rem 1.313rem;
     margin-top: 0.5rem;
     border: 0.094rem solid var(--color-grey-4);
-    
 }
 .secModal4{
     display: flex;
@@ -133,8 +132,10 @@
     color: var(--color-brand-1);
     transition: var(--animation-duration) var(--animation-type);
 }
-.secModal4 label:focus{
+.secModal4 label:active{
     background: #F0ECFB;
     border: 0.094rem solid var(--color-brand-1);
     color: var(--color-brand-1);
+    transform: translateY(4px);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
