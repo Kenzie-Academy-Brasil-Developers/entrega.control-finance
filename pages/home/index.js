@@ -34,14 +34,23 @@ const criaCards = (arr) => arr.map(x => {
     p2.classList.add("pValores")
     but.classList.add("butLi")
 
+    but.addEventListener("click", function(){
+        const id = arr.indexOf(x)
+        arr.splice(id, 1)
+        ulMain.innerHTML = ""
+        criaCards(arr)
+    })
+
     but.appendChild(img)
     section.append(p2, but)
     li.append(p1, section)
     ulMain.appendChild(li)
 
 })
-//criaCards(insertedValues)
+criaCards(insertedValues)
 
+// let butLi = document.querySelectorAll(".butLi")
+// let butLi2 = Array.from(butLi)
 
 const butdiv = Array.from(butsDiv)
 butdiv.map(x => {
@@ -52,8 +61,8 @@ butdiv.map(x => {
                     return x
                 }
             })
-            let somaValores = entradas.value
-            valorTotal.innerText = `R$ ${somaValores}`
+            const valoresTotal = entradas.reduce((num1, num2) => num1 + num2.value, 0)
+            valorTotal.innerText = `R$ ${Math.trunc(valoresTotal)},00`
             ulMain.innerHTML = ""
             criaCards(entradas)
         }
@@ -63,24 +72,20 @@ butdiv.map(x => {
                     return x
                 }
             })
-            let somaValores = saidas.value
-            valorTotal.innerText = `R$ ${somaValores}`
+            const valoresTotal = saidas.reduce((num1, num2) => num1 + num2.value, 0)
+            valorTotal.innerText = `R$ ${Math.trunc(valoresTotal)},00`
             ulMain.innerHTML = ""
             criaCards(saidas)
         }
         else{
-            let somaValores = insertedValues.value
-            valorTotal.innerText = `R$ ${somaValores}`
+            const valoresTotal = insertedValues.reduce((num1, num2) => num1 + num2.value, 0)
+            valorTotal.innerText = `R$ ${Math.trunc(valoresTotal)},00`
             ulMain.innerHTML = ""
             criaCards(insertedValues)
         }
     })
 })
 
-
-
-let butLi = document.querySelectorAll(".butLi")
-let butLi2 = Array.from(butLi)
 
 let contador = 3
 
@@ -111,12 +116,13 @@ inserirValorModal.addEventListener("click", function(){
 
 
 
-butLi2.map(x => {
-    x.addEventListener("click", function(event){
-        let li = event.path[3]
-        li.remove()
-    })
-})
+// butLi2.map(x => {
+//     x.addEventListener("click", function(event){
+//         let li = event.path[3]
+//         li.remove()
+//         console.log("oi")
+//     })
+// })
 
 
 
